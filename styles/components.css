@@ -1,0 +1,85 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Roboto, sans-serif;
+}
+
+/* Hauteur totale pour permettre le layout sticky-footer */
+html, body {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+/* Layout général : colonne verticale */
+body {
+    display: flex;
+    flex-direction: column;
+}
+
+/* Header fixé en haut */
+header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 1000;
+}
+
+/* Contenu principal prend tout l'espace restant */
+main {
+    flex: 1;
+    padding-top: 9rem; /* Pour ne pas être caché sous le header */
+}
+
+/* Barre orange du haut */
+.euroformation {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(238, 121, 7);
+    color: white;
+    height: 4rem;
+}
+
+/* Navigation principale */
+header nav {
+    height: 5rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 7rem;
+    background-color: white;
+}
+
+/* Logo */
+#logo {
+    width: 4rem;
+    height: 4rem;
+}
+
+/* Liste horizontale */
+header ul {
+    display: flex;
+    gap: 4rem;
+    list-style: none;
+    font-size: 0.9rem;
+}
+
+/* Liens sans soulignement ni couleur par défaut */
+nav a {
+    text-decoration: none;
+    color: black;
+    cursor: pointer;
+}
+
+/* Footer simple en bas de page */
+footer {
+    display: flex;
+    align-items: center;
+    background-color: rgba(238, 121, 7);
+    height: 3rem;
+}

@@ -1,0 +1,184 @@
+.banniere {
+    background-color: rgba(238, 121, 7);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 2rem 2rem;
+    gap: 5rem;
+    flex-wrap: wrap;
+    color: white;
+    text-align: left;
+    overflow: hidden;
+    min-height: 31rem;
+}
+
+.banniere-textes {
+    flex: 1 1 400px;
+    max-width: 33rem;
+}
+
+.banniere-textes h1 {
+    margin-top: -5rem;
+    font-size: 4rem;
+    margin-bottom: 0.3rem;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+}
+
+.banniere-textes h2 {
+    color: #f0fc04;
+    font-size: 2.7rem;
+    margin-left: 0.2rem;
+}
+
+.banniere-textes p {
+    font-size: 1.6rem;
+    margin-top: 1.5rem;
+    margin-bottom: 1.2rem;
+}
+
+.banniere-textes ul {
+    margin-top: 1rem;
+}
+
+.banniere-textes li {
+    font-size: 1.2rem;
+    margin-top: 0.5rem;
+    padding-left: 2rem;
+    background-image: url('/images/check_jaune.svg');
+    background-repeat: no-repeat;
+    background-position: 0 50%;
+    background-size: 1rem 1rem;
+    list-style: none;
+}
+
+.jaune {
+    color: #f0fc04;
+    font-weight: bold;
+}
+
+.banniere-image {
+    flex: 1 1 300px;
+    max-width: 500px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.banniere-image img {
+    max-width: 200%;
+    height: 25rem;
+    object-fit: contain;
+}
+
+.banniere-boutons {
+  display: flex;
+  justify-content: center;
+  gap: 5rem;
+  margin-top: -1.8rem;
+  position: relative;
+  z-index: 10;
+}
+
+.banniere-boutons button {
+  padding: 1rem 2rem;
+  font-size: 1.2rem;
+  border-radius: 2rem;
+  cursor: pointer;
+  color: black;
+  font-weight: bold;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.5);
+  transition: background-color 0.3s ease;
+}
+
+.passe-permis {
+    border: none;
+    background-color: #f0fc04;
+}
+
+.contacte-nous {
+    border: 3px solid rgb(228, 226, 226);
+
+}
+
+.contacte-nous:hover {
+    border: 3px solid #023f92;
+    transition: border 0.3s ease;
+}
+
+.choisis-ton-permis h1{
+    text-align: center;
+    font-size: 3rem;
+    margin-top: 3rem;
+}
+
+.choix {
+    display: flex;
+    justify-content: center;
+    margin-top: 2rem;
+    gap: 2rem;
+}
+
+.voiture, .moto, .poids-lourd, .remorque, .autre {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    /* border: 2px solid black; */
+    width: 11rem;
+    height: 15rem;
+    border-radius: 30px;
+    background-color:#f8f8f8;
+}
+
+.choix h1 {
+    margin-top: 0.5rem;
+    font-weight: bold;
+    font-size: 1.5rem;
+}
+
+.choix p {
+    font-size: 0.9rem;
+}
+
+.choix img {
+    width: 12rem;
+    height: 8rem;
+}
+
+.choix span {
+    margin-top: 0.3rem;
+    font-weight: bold;
+    color:#023f92;
+    font-size: 1.3rem;
+}
+
+.choix a {
+    text-decoration: none;
+    color: black;
+    cursor: pointer;
+}
+/* === RESPONSIVE === */
+
+@media (max-width: 900px) {
+    .banniere {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+
+    .banniere-textes,
+    .banniere-image {
+        max-width: 100%;
+        padding: 1rem;
+    }
+
+    .banniere-textes li {
+        background-position: 0 0.5em;
+        padding-left: 1.8rem;
+    }
+
+    .banniere-textes ul {
+        padding-left: 0;
+    }
+}
