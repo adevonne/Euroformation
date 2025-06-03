@@ -1,21 +1,52 @@
 <!DOCTYPE html>
 <html lang="fr">
-<head>
-  <meta charset="UTF-8">
-  <title>Nos véhicules - ECS Auto-École</title>
-  <link rel="stylesheet" href="/styles/components.css">  
-  <link rel="stylesheet" href="/styles/voiture.css">      
-</head>
-<body>
-  <div id="header"></div>
+  <head>
+    <meta charset="UTF-8" />
+    <title>Nos véhicules - ECS Auto-École</title>
+    <link rel="stylesheet" href="/styles/components.css" />
+    <link rel="stylesheet" href="/styles/voiture.css" />
+  </head>
+  <body>
+    <div id="header"></div>
 
-  <main>
-    <h1>Nos véhicules</h1>
-    <p>Découvrez nos voitures pour les formations...</p>
-  </main>
+    <main>
+      <section class="banniere">
+        <div class="banniere-textes">
+          <h1>Je passe mon permis de conduire</h1>
+          <div class="first">
+            <p>Mon permis de conduire des 1035€</p>
+            <a class="decouvre" href="">
+              <span >Je découvre -></span>
+            </a>
+          </div>
+          <div class="second">
+            <p>Mon permis financé avec le CPF</p>
+            <a class="decouvre" href="">
+              <span>Je découvre -></span>
+            </a>
+          </div>
+        </div>
 
-  <div id="footer"></div>
+        <div class="banniere-image">
+          <img src="/images/voiture.svg" alt="voiture" />
+        </div>
+      </section>
 
-  <script src="/scripts/inject.js"></script>
-</body>
+        <!-- ------------------------------------------BOUTONS------------------------------------------ -->
+
+      <div class="banniere-boutons">
+        <a href="/pages/voiture.html">
+          <button class="passe-permis">Passe ton permis</button>
+        </a>
+        <a href="/pages/contact.html">
+          <button class="contacte-nous">Contacte nous</button>
+        </a>
+      </div>
+
+    </main>
+
+    <div id="footer"></div>
+
+    <script src="/scripts/inject.js"></script>
+  </body>
 </html>

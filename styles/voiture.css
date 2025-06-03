@@ -1,3 +1,128 @@
-body {
-    background-color: blue;
+.banniere {
+    background-color: rgba(238, 121, 7);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 2rem 2rem;
+    gap: 10rem;
+    flex-wrap: wrap;
+    color: white;
+    text-align: left;
+    overflow: hidden;
+    min-height: 31rem;
+}
+
+.banniere-textes {
+    flex: 1 1 400px;
+    max-width: 33rem;
+}
+
+.banniere-textes h1 {
+    margin-top: -1rem;
+    font-size: 4rem;
+    width: 50rem;
+}
+
+.banniere-textes .first {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 3rem;
+    margin-top: 3rem;
+    font-size: 1.3rem;
+    border: 4px solid #e4a261;
+    border-radius: 15px;
+    margin-bottom: 3rem;
+    background-color: black;
+    height: 3.8rem;
+    font-weight: bold;
+}
+
+.banniere-textes .second {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 5rem;
+    margin-top: 3rem;
+    font-size: 1.3rem;
+    color: black;
+    border-radius: 10px;
+    margin-bottom: 3rem;
+    background-color: white;
+    height: 3rem;
+    font-weight: bold;
+}
+
+.decouvre {
+    font-size: 0.9rem;
+}
+
+.banniere-textes .first a {
+    text-decoration: none;
+    color: white;
+}
+
+.banniere-textes .second a {
+    text-decoration: none;
+    color: black;
+}
+
+.banniere-textes a:hover{
+    font-size: 1rem;
+}
+
+.jaune {
+    color: #f0fc04;
+    font-weight: bold;
+}
+
+.banniere-image {
+    flex: 1 1 300px;
+    max-width: 500px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.banniere-image img {
+    max-width: 200%;
+    height: 25rem;
+    object-fit: contain;
+}
+
+.banniere-boutons {
+  display: flex;
+  justify-content: center;
+  gap: 5rem;
+  margin-top: -1.8rem;
+  position: relative;
+  z-index: 10;
+}
+
+.banniere-boutons button {
+  padding: 1rem 2rem;
+  font-size: 1.2rem;
+  border-radius: 2rem;
+  cursor: pointer;
+  color: black;
+  font-weight: bold;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.5);
+  transition: background-color 0.3s ease;
+}
+
+/* ------------------------------------------------------------------------------------------------------- */
+
+.passe-permis {
+    border: none;
+    background-color: #f0fc04;
+}
+
+.contacte-nous {
+    border: 3px solid rgb(228, 226, 226);
+
+}
+
+.contacte-nous:hover {
+    border: 3px solid #3366FF;
+    transition: border 0.3s ease;
 }

@@ -1,3 +1,7 @@
+button {
+    cursor: pointer;
+}
+
 .banniere {
     background-color: rgba(238, 121, 7);
     display: flex;
@@ -31,7 +35,7 @@
     margin-left: 0.2rem;
 }
 
-.banniere-textes p {
+.banniere-textes h3 {
     font-size: 1.6rem;
     margin-top: 1.5rem;
     margin-bottom: 1.2rem;
@@ -91,6 +95,8 @@
   transition: background-color 0.3s ease;
 }
 
+/* ------------------------------------------------------------------------------------------------------- */
+
 .passe-permis {
     border: none;
     background-color: #f0fc04;
@@ -98,13 +104,14 @@
 
 .contacte-nous {
     border: 3px solid rgb(228, 226, 226);
-
 }
 
 .contacte-nous:hover {
-    border: 3px solid #023f92;
+    border: 3px solid #3366FF;
     transition: border 0.3s ease;
 }
+
+/* ------------------------------------------------------------------------------------------------------- */
 
 .choisis-ton-permis h1{
     text-align: center;
@@ -116,6 +123,7 @@
     display: flex;
     justify-content: center;
     margin-top: 2rem;
+    margin-bottom: 3rem;
     gap: 2rem;
 }
 
@@ -124,7 +132,6 @@
     flex-direction: column;
     align-items: center;
     text-align: center;
-    /* border: 2px solid black; */
     width: 11rem;
     height: 15rem;
     border-radius: 30px;
@@ -139,17 +146,18 @@
 
 .choix p {
     font-size: 0.9rem;
+    margin-bottom: 1rem;
 }
 
 .choix img {
     width: 12rem;
-    height: 8rem;
+    height: 7rem;
 }
 
 .choix span {
     margin-top: 0.3rem;
     font-weight: bold;
-    color:#023f92;
+    color:#3366FF;
     font-size: 1.3rem;
 }
 
@@ -158,6 +166,213 @@
     color: black;
     cursor: pointer;
 }
+
+.plus {
+    margin-top: -0.5rem;
+}
+
+.choix a:hover{
+    background-color: #deecff;
+    border-radius: 30px;
+}
+
+.choix .plus:hover {
+    font-size: 1rem;
+}
+
+/* ------------------------------------------------------------------------------------------------------- */
+
+.icons {
+    display: flex;
+    gap: 6rem;
+    justify-content: center;
+    text-align: center;
+    margin-bottom: 5rem;
+    font-size: 0.9rem;
+}
+
+.icons img {
+    width: 1.3rem;
+}
+
+.icons span {
+    font-weight: bold;
+    color: #3366FF;
+}
+
+/* ------------------------------------------------------------------------------------------------------- */
+
+.financement-component {
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    width: 80%;
+    margin: 3rem 0 6rem 10%;
+    gap: 3rem;
+    border-radius: 20px;
+    height: 23rem;
+    background-color: #EE7907;
+    color: white;
+}
+
+.cpf-image {
+    display: flex;
+    margin-left: 0.5rem;
+}
+
+.financement-component .cpf-back{
+    width: 33rem;
+    height: 22rem;
+    border-radius: 20px;
+}
+
+.financement-component .cpf-front{
+    width: 8.7rem;
+    height: 8rem;
+    position: absolute;
+    margin-left: 19rem;
+    margin-top: 3rem;
+    transform: rotate(-5deg);
+}
+
+.cpf-text h1 {
+    font-size: 2.4rem;
+    font-weight: 900;
+}
+
+.cpf-text p {
+    margin-top: 1rem;
+    font-size: 1.1rem;
+}
+
+.cpf-text button {
+    margin-top: 3rem;
+    height: 3rem;
+    width: 15rem;
+    background-color: white;
+    border: none;
+    border-radius: 5px;
+    font-size: 1rem;
+    font-weight: bold;
+}
+
+/* ------------------------------------------------------------------------------------------------------- */
+
+.point-component {
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    width: 80%;
+    margin: 0 0 6rem 10%;
+    gap: 3rem;
+    border: 4px solid #cacaca;
+    border-radius: 20px;
+    height: 23rem;
+    color: black;
+}
+
+.point-image img {
+    display: flex;
+    width: 33rem;
+    height: 21.7rem;
+    border-radius: 20px;
+    margin-right: 0.5rem;
+}
+
+.point-text h1 {
+    font-size: 2.4rem;
+    font-weight: 900;
+}
+
+.point-text p {
+    margin-top: 1rem;
+    font-size: 1.1rem;
+}
+
+.point-text h1, .point-text p, .point-text button {
+    margin-left: 3rem;
+}
+
+.point-text button {
+    margin-top: 3rem;
+    height: 3rem;
+    width: 15rem;
+    background-color: black;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    font-size: 1rem;
+    font-weight: bold;
+}
+
+/* ------------------------------------------------------------------------------------------------------- */
+
+.accompagnee-component {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 80%;
+    margin: 3rem 0 6rem 10%;
+    gap: 3rem;
+    border-radius: 20px;
+    height: 23rem;
+    background-color: #EE7907;
+    color: white;
+}
+
+.accompagnee-image {
+    display: flex;
+    margin-left: 0.5rem;
+}
+
+.accompagnee-component .accompagnee-back{
+    width: 33rem;
+    height: 22rem;
+    margin: 0;
+    border-radius: 20px;
+}
+
+.accompagnee-component .accompagnee-front{
+    height: 11rem;
+    position: absolute;
+    margin-left: 23rem;
+    margin-top: 12rem;
+    transform: rotate(9deg);
+}
+
+.accompagnee-text h1 {
+    font-size: 2.4rem;
+    font-weight: 900;
+    margin-bottom: 1rem;
+}
+
+.accompagnee-text li {
+    padding-left: 3rem;
+    margin-top: 1rem;
+    font-size: 1.1rem;
+    background-image: url('/images/badge-check.png');
+    background-repeat: no-repeat;
+    background-position: 0 50%;
+    background-size: 1.5rem 1.5rem;
+    list-style: none;
+}
+
+.accompagnee-text button {
+    margin-top: 3rem;
+    height: 3rem;
+    width: 15rem;
+    background-color: white;
+    border: none;
+    border-radius: 5px;
+    font-size: 1rem;
+    font-weight: bold;
+}
+
+
+
+
+
+
 /* === RESPONSIVE === */
 
 @media (max-width: 900px) {

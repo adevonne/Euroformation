@@ -2,7 +2,7 @@
 <html lang="fr">
   <head>
     <meta charset="UTF-8" />
-    <title>Accueil - ECS Auto-École</title>
+    <title>Euroformation</title>
     <link rel="stylesheet" href="/styles/components.css" />
     <link rel="stylesheet" href="/styles/index.css" />
   </head>
@@ -10,11 +10,13 @@
     <div id="header"></div>
 
     <main>
+      <!-- -----------------------------------------BANNIERE------------------------------------------- -->
+
       <section class="banniere">
         <div class="banniere-textes">
           <h1>Ton permis de conduire</h1>
           <h2>à partir de 1035€</h2>
-          <p>Le réseau Euroformation c'est :</p>
+          <h3>Le réseau Euroformation c'est :</h3>
           <ul>
             <li>Un suivi <span class="jaune">personnalisé</span></li>
             <li>Des cours de conduite <span class="jaune">la nuit</span></li>
@@ -35,6 +37,8 @@
         </div>
       </section>
 
+      <!-- ------------------------------------------BOUTONS------------------------------------------ -->
+
       <div class="banniere-boutons">
         <a href="/pages/voiture.html">
           <button class="passe-permis">Passe ton permis</button>
@@ -44,53 +48,152 @@
         </a>
       </div>
 
+      <!-- -------------------------------------------CHOIX------------------------------------------- -->
+
       <section class="choisis-ton-permis">
         <h1>Choisis ton permis</h1>
         <div class="choix">
           <div class="voiture">
-            <h1>Permis <br />Voiture</h1>
-            <p>à partir de <span>1035€</span></p>
-            <img src="/images/voiture.svg" alt="voiture" />
             <a href="/pages/voiture.html">
-              <p>En savoir plus ></p>
+              <h1>Permis <br />Voiture</h1>
+              <p>à partir de <span>1035€</span></p>
+              <img src="/images/voiture.svg" alt="voiture" />
+              <p class="plus">En savoir plus ></p>
             </a>
           </div>
 
           <div class="moto">
-            <h1>Permis <br />Moto</h1>
-            <p>à partir de <span>879€</span></p>
-            <img src="/images/voiture.svg" alt="voiture" />
             <a href="/pages/moto.html">
-              <p>En savoir plus ></p>
+              <h1>Permis <br />Moto</h1>
+              <p>à partir de <span>879€</span></p>
+              <img src="/images/moto.svg" alt="moto" />
+              <p class="plus">En savoir plus ></p>
             </a>
           </div>
 
           <div class="poids-lourd">
-            <h1>Permis <br />Poids lourd</h1>
-            <p>à partir de <span>1000€</span></p>
-            <img src="/images/voiture.svg" alt="voiture" />
             <a href="/pages/poids-lourd.html">
-              <p>En savoir plus ></p>
+              <h1>Permis <br />Poids lourd</h1>
+              <p>à partir de <span>1000€</span></p>
+              <img src="/images/camion.svg" alt="voiture" />
+              <p class="plus">En savoir plus ></p>
             </a>
           </div>
 
           <div class="remorque">
-            <h1>Permis <br />Remorque</h1>
-            <p>à partir de <span>295€</span></p>
-            <img src="/images/voiture.svg" alt="voiture" />
             <a href="/pages/remorque.html">
-              <p>En savoir plus ></p>
+              <h1>Permis <br />Remorque</h1>
+              <p>à partir de <span>295€</span></p>
+              <img src="/images/voiture.svg" alt="voiture" />
+              <p class="plus">En savoir plus ></p>
             </a>
           </div>
 
           <div class="autre">
-            <h1>Autres <br />Services</h1>
-            <p>à partir de <span>260€</span></p>
-            <img src="/images/voiture.svg" alt="voiture" />
             <a href="/pages/autres.html">
-              <p>En savoir plus ></p>
+              <h1>Autres <br />Services</h1>
+              <p>à partir de <span>260€</span></p>
+              <img src="/images/voiture.svg" alt="voiture" />
+              <p class="plus">En savoir plus ></p>
             </a>
           </div>
+        </div>
+      </section>
+
+      <!-- ------------------------------------------ICON----------------------------------------------- -->
+
+      <section class="icons">
+        <div class="centre-formation">
+          <img src="./images/marker.png" alt="localisation" />
+          <p><span>2</span> centres de formations</p>
+        </div>
+
+        <div class="eleve-satisfait">
+          <img src="./images/star.png" alt="satisfaction" />
+          <p><span>94%</span> de nos élèves satisfaits</p>
+        </div>
+
+        <div class="experience">
+          <img src="./images/user-experience.png" alt="experience" />
+          <p><span>47 ans</span> d'expériences</p>
+        </div>
+
+        <div class="plusieurs-fois">
+          <img src="./images/piggy-bank.png" alt="paiement en plusieurs fois" />
+          <p>Paiement en <span>plusieurs fois</span></p>
+        </div>
+      </section>
+
+      <!-- -------------------------------------------CPF----------------------------------------------- -->
+
+      <section class="financement-component">
+        <div class="cpf-image">
+          <img
+            class="cpf-back"
+            src="./images/back-cpf.png"
+            alt="financement CPF"
+          />
+          <img
+            class="cpf-front"
+            src="./images/front-cpf.png"
+            alt="financement CPF"
+          />
+        </div>
+        <div class="cpf-text">
+          <h1>Financez votre permis avec le CPF</h1>
+          <p>
+            Apprenti·e, salarié·e, indépendant·e ou en recherche d'emploi ?
+            Financez votre permis de conduire pour seulement 100 € grâce à votre
+            Compte Personnel de Formation.
+          </p>
+          <a href="./pages/voiture.html">
+              <button>Voir nos offres permis CPF</button>
+          </a>
+        </div>
+      </section>
+
+      <!-- -----------------------------------------POINTS--------------------------------------------- -->
+
+      <section class="point-component">
+        <div class="point-text">
+          <h1>Récupérez vos points avec les stages</h1>
+          <p>
+            Vous avez perdu des points sur votre permis ? Récupérez les avec un stage agréé Euroformation.
+          </p>
+          <a href="./pages/autres.html">
+              <button>Récupérer mes points</button>
+          </a>
+        </div>
+        <div class="point-image">
+          <img src="./images/point-permis.png" alt="permis de conduire" />
+        </div>
+      </section>
+
+      <!-- ----------------------------------------ACCOMPAGNEE----------------------------------------- -->
+
+      <section class="accompagnee-component">
+        <div class="accompagnee-image">
+          <img
+            class="accompagnee-back"
+            src="./images/permis-accompagnee.png"
+            alt="financement CPF"
+          />
+          <img
+            class="accompagnee-front"
+            src="./images/magnet-accompagnee.png"
+            alt="financement CPF"
+          />
+        </div>
+        <div class="accompagnee-text">
+          <h1>Conduite Accompagnée dès 15ans !</h1>
+          <ul>
+            <li>95% d'élèves satisfaits et des millions de parents qui nous font confiance</li>
+            <li>Conseils personnalisés pour accompagner votre enfant</li>
+            <li>Enseignants diplômés d'État et sélectionnés pour leur excellence pédagogique</li>
+          </ul>
+          <a href="./pages/voiture.html">
+              <button>J'inscris mon enfant</button>
+          </a>
         </div>
       </section>
     </main>
